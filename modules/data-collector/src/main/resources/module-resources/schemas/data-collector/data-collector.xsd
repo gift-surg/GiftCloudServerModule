@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://genfi.radiologics.com/schemas"
+           xmlns:genfi="http://genfi.radiologics.com/schemas"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xnat="http://nrg.wustl.edu/xnat"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xs:import namespace="http://nrg.wustl.edu/xnat" schemaLocation="../xnat/xnat.xsd"/>
+
+    <!-- This is a data-type schema for uk.ac.ucl.cmic.tig.gift-surg-data-collector with no defined data types. -->
+
+</xs:schema>
