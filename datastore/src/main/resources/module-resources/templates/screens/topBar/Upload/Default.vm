@@ -1,6 +1,7 @@
 <!-- Sequence: 10 -->
 <!-- Upload/Default -->
-    <li><a href="$link.setPage("LaunchUploadApplet.vm")">MRI</a></li>
+    <li><a href="$link.setPage("LaunchUploadApplet.vm")">MRI (single session)</a></li>
+    <li><a href="$link.setPage("MultiUploadApplet.vm")">MRI (batch)</a></li>
 <!--
     <li><a href="$link.setPage("XMLUpload.vm")">XML</a></li>
     <li><a href="$link.setPage("XDATScreen_uploadCSV.vm")">Spreadsheet</a></li>
