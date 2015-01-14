@@ -3,7 +3,6 @@ package org.nrg.xdat.om.base;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
-import org.nrg.xdat.om.ExtPseudonymizedsubjectdata;
 import org.nrg.xdat.om.ExtSubjectpseudonym;
 import org.nrg.xdat.om.base.auto.AutoExtSubjectpseudonym;
 import org.nrg.xdat.security.XDATUser;
@@ -36,8 +35,7 @@ public class BaseExtSubjectpseudonym extends AutoExtSubjectpseudonym {
 		super(properties, user);
 	}
 
-	public static ExtSubjectpseudonym GetPseudonym(
-			ExtPseudonymizedsubjectdata subject, String pseudonym, XDATUser user, boolean preLoad) {
+	public static ExtSubjectpseudonym GetPseudonym(String pseudonym, XDATUser user, boolean preLoad) {
 		
 		CriteriaCollection cc = new CriteriaCollection("AND");
 		cc.addClause("ext:subjectPseudonym/id", pseudonym);
