@@ -112,7 +112,7 @@
 	<p style="width:500px;margin-top:10px;margin-bottom:20px;">
 		When you click on <b>Launch Uploader</b>, a security warning as the one shown below may appear. Simply click on <b>Continue</b>.
         </p>
-	<img src="/gift-surg/images/AppletCertificateConfirmation.png" width="446">
+	<img src="$content.getURI('images/AppletCertificateConfirmation.png')" width="446">
 
  </div> <!-- end of hideIfProtocol -->
 <div id="forProtocolContent" style="display:none"></div>
