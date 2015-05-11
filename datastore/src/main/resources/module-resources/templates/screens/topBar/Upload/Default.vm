@@ -1,9 +1,3 @@
 <!-- Sequence: 10 -->
 <!-- Upload/Default -->
-    <li><a href="$link.setPage("LaunchUploadApplet.vm")">Single MRI session</a></li>
-    <li><a href="$link.setPage("MultiUploadApplet.vm")">Multiple MRI sessions (experimental)</a></li>
-<!--
-    <li><a href="$link.setPage("XMLUpload.vm")">XML</a></li>
-    <li><a href="$link.setPage("XDATScreen_uploadCSV.vm")">Spreadsheet</a></li>
-    <li><a href="$link.setPage("XDATScreen_prearchives.vm")">Go to prearchive</a></li>
--->
+	<li><a href="$link.setPage("LaunchGiftCloudUploader.vm")">Launch uploader</a></li>
