@@ -8,12 +8,14 @@
 	
 		var webstartFile = "webstart.jnlp";
 		var webstartUrl = serverUrl + "uploader/" + webstartFile;
-		document.write("<p>In case the uploader is not launched automatically:</p>");
+		document.write("<p>In case the GIFT-Cloud Uploader is not launched automatically:</p>");
 		document.write("<ul>");
-		document.write("<li>Check your downloads folder for a file named <strong>" + webstartFile + "</strong>,</li>");
-		document.write("<li>Run this file by double clicking.</li>")
+		document.write("<li>Check your browser downloads for a file named <strong>" + webstartFile + "</strong></li>");
+		document.write("<li>Run this file by double clicking</li>")
 		document.write("</ul>");
-		document.write("<p>The download location for this file is: <a href=\"" + webstartUrl + "\">" + webstartUrl + "</a>.</p>");
+		document.write("<p>(Alternatively, you can manually download this file from <a href=\"" + webstartUrl + "\">" + webstartUrl + "</a>)</p>");
+		document.write("<br/><br/>")
+		document.write("<p>GIFT-Cloud Uploader uses the <a href=\"https://java.com/en/download/faq/java_webstart.xml\">Java webstart</a> technology.</p>")
 	
 		var minimumVersion = '1.8';
 	
