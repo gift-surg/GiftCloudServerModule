@@ -1,0 +1,8 @@
+<script language="JavaScript"><!--
+	var xdatUrl = "$!xdatUrl";
+	if (xdatUrl.charAt(xdatUrl.length-1) != '/')
+		xdatUrl += '/';
+	
+	var webstartUrl = xdatUrl + "uploader/" + "webstart.jnlp";
+	document.write(webstartUrl);
+//--></script>
