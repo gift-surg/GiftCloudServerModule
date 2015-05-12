@@ -1,8 +1,42 @@
+<!-- Much of the following has been adapted from http://www.dclunie.com/pixelmed/software/webstart/DicomCleaner.html -->
+<script src="http://www.java.com/js/deployJava.js"></script>
 <script language="JavaScript"><!--
-	var xdatUrl = "$!xdatUrl";
-	if (xdatUrl.charAt(xdatUrl.length-1) != '/')
-		xdatUrl += '/';
+	var serverUrl = "$!serverUrl";
+	if (serverUrl.length > 0) {
+		if (serverUrl.charAt(serverUrl.length-1) != '/')
+			serverUrl += '/';
 	
-	var webstartUrl = xdatUrl + "uploader/" + "webstart.jnlp";
-	document.write(webstartUrl);
+		var webstartFile = "webstart.jnlp";
+		var webstartUrl = serverUrl + "uploader/" + webstartFile;
+		document.write("<p>In case the uploader is not launched automatically:</p>");
+		document.write("<ul>");
+		document.write("<li>Check your downloads folder for a file named <strong>" + webstartFile + "</strong>,</li>");
+		document.write("<li>Run this file by double clicking.</li>")
+		document.write("</ul>");
+		document.write("<p>The download location for this file is: <a href=\"" + webstartUrl + "\">" + webstartUrl + "</a>.</p>");
+	
+		var minimumVersion = '1.8';
+	
+		if (deployJava.isWebStartInstalled(minimumVersion)) {
+			deployJava.launch(webstartUrl);
+		}
+		else {
+			if (deployJava.installLatestJRE()) {
+				intervalID = setInterval("launchOurJNLP()",100);	// no var so global
+			}
+			else {
+				alert("Cannot run without Java "+minimumVersion+" or more recent installed, and cannot automatically install it");
+			}
+		}
+	}
+	else {
+		alert("Server URL could not be obtained. Contact system admin for assistance.");
+	}
+	
+	function launchOurJNLP() {
+		if (deployJava.isWebStartInstalled(minimumVersion)) {
+			clearInterval(intervalID);
+			deployJava.launch(webstartUrl);
+		}
+	}
 //--></script>
