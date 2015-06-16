@@ -1,0 +1,4 @@
+Dear $name,
+<br><br>Please follow this link (we recommend copy-pasting it into your browser) to verify your email address: <a href="$verifyEmailLink">$verifyEmailLink</a>
+<br><br>This is an auto-generated message. Please do not reply to it.
+<br><br>This link will expire in 24 hours.

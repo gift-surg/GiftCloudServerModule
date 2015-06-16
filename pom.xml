@@ -5,7 +5,7 @@
 
     <groupId>uk.ac.ucl.cmic.tig.gift-surg</groupId>
     <artifactId>datastore-modules</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>GC-1.2.0</version>
 	<packaging>pom</packaging>
 
     <name>Module Parent for GIFT-Surg XNAT Datastore Modules</name>
