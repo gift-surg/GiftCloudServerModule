@@ -200,7 +200,7 @@
                                 </TR>
                             #else
                                 <TR>
-                                    <TD><input type="checkbox" id="scan_type$counter" name="scan_type" value="NULL"/></TD>
+                                    <TD><input type="checkbox" id="scan_type$counter" name="scan_type" value="NULL" checked="true"/></TD>
                                     <TD><label for="scan_type$counter">Unassigned ($!scan.get(1))</label></TD>
                                 </TR>
                             #end
@@ -357,11 +357,11 @@
             <TD>&nbsp;</TD>
         </TR>
         <TR>
-            <TD><input type="checkbox" id="projectIncludedInPath" name="projectIncludedInPath" value="true"/>
+            <TD><input type="checkbox" id="projectIncludedInPath" name="projectIncludedInPath" checked value="true"/>
             <TD><label for="projectIncludedInPath">Include $displayManager.getSingularDisplayNameForProject().toLowerCase() in file paths</label></TD>
         </TR>
         <TR>
-            <TD><input type="checkbox" id="subjectIncludedInPath" name="subjectIncludedInPath" value="true"/>
+            <TD><input type="checkbox" id="subjectIncludedInPath" name="subjectIncludedInPath" checked value="true"/>
             <TD><label for="subjectIncludedInPath">Include $displayManager.getSingularDisplayNameForSubject().toLowerCase() in file paths</label></TD>
         </TR>
         <TR>
