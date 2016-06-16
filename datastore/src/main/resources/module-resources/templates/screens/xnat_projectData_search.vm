@@ -16,15 +16,14 @@
 			#xdatSearchField($schemaElement $schemaElement.getDisplayField("DESCRIPTION"))
 		</TD>
 
-		</TR>
-		<TR>
+		<!-- </TR>
+		<TR> -->
 
 		<TD>Keywords</TD>
 		<TD>
 			#xdatSearchField($schemaElement $schemaElement.getDisplayField("KEYWORDS"))
 		</TD>
-		#set($queryResults = $data.getSession().getAttribute("user").getQueryResultsAsArrayList("SELECT lastname, lastname || ', ' || firstname FROM xnat_investigatorData ORDER BY lastname"))
-		<TD>Investigator</TD>
+		<!-- #set($queryResults = $data.getSession().getAttribute("user").getQueryResultsAsArrayList("SELECT lastname, lastname || ', ' || firstname FROM xnat_investigatorData ORDER BY lastname")) <TD>Investigator</TD>
 		<TD colspan="3">
 			<select name="${schemaElement.getFullXMLName()}.PROJECT_INVS_equals">
   			<option value="">(SELECT)</option>
@@ -32,6 +31,6 @@
 	    			<option value="$inv.get(1)">$inv.get(1)</option>
 			#end
 			</select>
-		</TD>
+		</TD> -->
 	</TR>
 </TABLE>

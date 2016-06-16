@@ -13,7 +13,7 @@
   		<TD>
   			<INPUT size="6" type="text" name="xnat:subjectData.COMBO0" value="$!search.getWebFormValue("xnat:subjectData.COMBO0")" maxlength="100"/>
   		</TD>
-		<TD>Gender</TD>
+		<!-- <TD>Gender</TD>
   		<TD>
   			<select name="xnat:subjectData.GENDER_TEXT_equals">
   				#set($GENDER_TEXT_value=$!search.getWebFormValue("xnat:subjectData.GENDER_TEXT_equals"))
@@ -23,9 +23,9 @@
 	    		<option value="O" #if($GENDER_TEXT_value=="O") SELECTED #end>other</option>
 	    		<option value="U" #if($GENDER_TEXT_value=="U") SELECTED #end>unknown</option>
 			</select>
-  		</TD>
+  		</TD> -->
 
-		<TD>Hand</TD>
+		<!-- <TD>Hand</TD>
   		<TD>
   			<select name="xnat:subjectData.HANDEDNESS_TEXT_equals">
   				#set($HANDEDNESS_TEXT_value=$!search.getWebFormValue("xnat:subjectData.HANDEDNESS_TEXT_equals"))
@@ -41,22 +41,22 @@
 		<TD>YOB</TD>
   		<TD>
   			<INPUT size="4" maxlength="4" type="text" name="xnat:subjectData.DOB_equals" value="$!search.getWebFormValue("xnat:subjectData.DOB_equals")"/>
-  		</TD> 
+  		</TD> --> 
 		#advancedSearchCreateProjectList($data $displayManager $search $schemaElement)
 	</TR>
-	<TR>
-  		
+	<!-- <TR>
+
 		<TD>Education</TD>
   		<TD align="left">
   			<INPUT size="4" type="text" name="xnat:subjectData.EDUC_equals" value="$!search.getWebFormValue("xnat:subjectData.EDUC_equals")"/>
   		</TD>
-  		
+
 		<TD>SES</TD>
   		<TD COLSPAN="3" ALIGN="left">
   			<INPUT size="4" type="text" name="xnat:subjectData.SES_equals" value="$!search.getWebFormValue("xnat:subjectData.SES_equals")"/>
   		</TD>
-  
-	</TR>
+
+	</TR> -->
 </TABLE>
 		</TD>
 		
