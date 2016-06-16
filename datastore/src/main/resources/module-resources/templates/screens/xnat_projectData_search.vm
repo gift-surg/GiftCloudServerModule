@@ -1,0 +1,37 @@
+
+<TABLE VALIGN="top">
+	<TR>
+		<TD>ID</TD>
+		<TD>
+			#xdatSearchField($schemaElement $schemaElement.getDisplayField("ID"))
+		</TD>
+
+		<TD>Name</TD>
+		<TD>
+			#xdatSearchField($schemaElement $schemaElement.getDisplayField("NAME"))
+		</TD>
+
+		<TD>Description</TD>
+		<TD>
+			#xdatSearchField($schemaElement $schemaElement.getDisplayField("DESCRIPTION"))
+		</TD>
+
+		</TR>
+		<TR>
+
+		<TD>Keywords</TD>
+		<TD>
+			#xdatSearchField($schemaElement $schemaElement.getDisplayField("KEYWORDS"))
+		</TD>
+		#set($queryResults = $data.getSession().getAttribute("user").getQueryResultsAsArrayList("SELECT lastname, lastname || ', ' || firstname FROM xnat_investigatorData ORDER BY lastname"))
+		<TD>Investigator</TD>
+		<TD colspan="3">
+			<select name="${schemaElement.getFullXMLName()}.PROJECT_INVS_equals">
+  			<option value="">(SELECT)</option>
+			#foreach($inv in $queryResults)
+	    			<option value="$inv.get(1)">$inv.get(1)</option>
+			#end
+			</select>
+		</TD>
+	</TR>
+</TABLE>
