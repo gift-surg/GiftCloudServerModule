@@ -6,7 +6,7 @@
 		if (serverUrl.charAt(serverUrl.length-1) != '/')
 			serverUrl += '/';
 	
-		var webstartFile = "webstart.jnlp";
+		var webstartFile = "GiftCloudUploader.jnlp";
 		var webstartUrl = serverUrl + "uploader/" + webstartFile;
 		document.write("<p>If GIFT-Cloud Uploader is not launched automatically:</p>");
 		document.write("<ul>");
