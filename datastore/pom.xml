@@ -6,7 +6,7 @@
     <parent>
         <groupId>uk.ac.ucl.cmic.tig.gift-surg</groupId>
         <artifactId>datastore-modules</artifactId>
-        <version>GC-1.2.1</version>
+        <version>GC-1.2.2</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
